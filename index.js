@@ -12,14 +12,21 @@ Bunu sağlamak için cevabı direk console'a loglayın veya çağırdığınız 
 
 /*
 Görev 1a - Ehliyet Yaşı (puanlamaya dahil değildir)
-
 Aşağıdakileri yapın:   
    1. surucuYasi diye bir değişken yaratın ve bir sayı atayın.
+   
    2. Eğer yaş 18'den büyük ise Console'da True, değilse False değeri yazdırın.
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-
+const surucuYasi = 18;
+if (surucuYasi < 18) {
+  console.log ("True")
+}
+else {
+  console.log ("False")
+ }
+  
 
 
 /*
@@ -27,13 +34,18 @@ Görev 1b - Değerler (puanlamaya dahil değildir)
 
 Aşağıdakileri yapınız:   
    1. 2 değişken oluşturun ve bunlara değerler atayın (isimlendirme olarak birinciDeger ikinciDegeri kullanabilirsin)
+
    2. 1. değeri 2. değer ile karşılaştıran bir koşul oluşturun
    3. 2. adımdaki koşul doğru olduğunda 1. değeri değiştirin
    4. 1. değeri Console'a yazdırın
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-
+let birinciDeger = 3;
+let ikinciDeger = 0;
+if (birinciDeger > ikinciDeger) 
+  {birinciDeger = 1 }
+console.log (birinciDeger)
 
 
 
@@ -48,7 +60,9 @@ Aşağıdakileri yapın:
 
    İPUCU: Number metoduna bakabilirsin
 */
-
+let sayi = "1999";
+let newsayi = Number(sayi);
+console.log(newsayi)
 
 
 
@@ -61,9 +75,12 @@ Aşağıdakileri yapın:
    3. a ve b'yi çarpıp, sonucu dönün
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+function carpma function carpma(num1, num2) {
+  let num3 = num1 * num2;
+ console.log(num3); 
+ }
+ carpma(2,3);
+
 
 
 
@@ -77,9 +94,12 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+
+function kopeginYasi(insanYas) {
+  let kopek = insanYas * 7;
+    console.log(kopek)
+  }
+  kopeginYasi(9)
 
 
 
@@ -120,10 +140,12 @@ Aşağdakileri milDonusturucu fonksiyonunu kullanarak yapın:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function donusturucu(x) {
+  const mil = 0.63;
+  let hesaplanmis = x*mil;
+  return hesaplanmis;
 }
-
+console.log(donustucu(5));
 
 
 //Görev 4b - Santimetreden Feet
@@ -134,11 +156,12 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 3. feet değerini geri dönün
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function donusturucu(x) {
+  const feet = 0.03;
+  let hesaplanmis = x*feet;
+  return hesaplanmis;
 }
-
-
+console.log(donusturucu(1));
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımızı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
 
@@ -173,9 +196,26 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
-/*buraya kodunu yazabilirsin*/
-}
+function notHesapla(not){
+  
+    if (not >= 90){
+    return "A aldin";
+  }
+   else if (not >= 80) {
+    return "B aldin";
+   }
+   else if (not >= 70) {
+    return "C aldin";
+   }
+   else if (not >= 60) {
+    return "D aldin";
+   }else {
+    return "F aldin";
+   }
+    }
+console.log(notHesapla(20))
+
+
 
 
 
